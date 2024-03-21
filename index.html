@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Samuel Lundblad">
+    <meta name="description" content="En knapp som ändrar bakgrundsfärgen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En knapp</title>
+    
+    <style>
+.ljusblå
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+.grön
+{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+#gfg
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    color:rgb(186, 118, 29);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <h1 id="gfg">Den här texten ska ändra färg när du trycker på någon av knapparna</h1>
+    
+    
+    <div class="ljusblå">
+        <button onclick="changeColorBlue()">ljusblå</button>
+    </div>
+
+    <div class="grön">
+        <button onclick="changeColorGreen()">grön</button>
+    </div>
+
+    <script>
+        function changeColorBlue()
+        {
+            document.getElementById("gfg").style.color = "lightblue";
+        }
+    
+        function changeColorGreen()
+        {
+            document.getElementById("gfg").style.color = "green";
+        }
+    </script>
+
+</body>
+</html>
